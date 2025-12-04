@@ -1,0 +1,100 @@
+/* FORM LAYOUT */
+form {
+    max-width: 640px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(112, 143, 143, 0.5);
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-top: 1.25rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+/* Make the very first label a bit closer to the top */
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* INPUTS & TEXTAREAS */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    border: 1px solid rgba(112, 143, 143, 0.8);
+    font-size: 0.9rem;
+    outline: none;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.08s ease;
+}
+
+/* TEXTAREA SPECIFIC */
+textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* FOCUS STATES */
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 9px rgba(87, 255, 252, 0.55);
+    background-color: #050707;
+    transform: translateY(-1px);
+}
+
+/* DATE PICKER ICON IN DARK THEME (WEBKIT) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    margin-top: 2rem;
+    display: inline-block;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    background-color: var(--accent-color);
+    color: #000;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    transition:
+        background-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.12s ease;
+}
+
+/* BUTTON HOVER / ACTIVE */
+input[type="submit"]:hover {
+    background-color: #7ffffa;
+    box-shadow: 0 10px 26px rgba(87, 255, 252, 0.45);
+    transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 16px rgba(87, 255, 252, 0.35);
+}

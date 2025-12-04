@@ -1,0 +1,30 @@
+nav {
+    position: sticky;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+a {
+    font-size: larger;
+    text-decoration: none;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    padding: 10px;
+}
+
+.right-region,
+.left-region {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-region {
+    flex: 1;
+    justify-content: space-around;
+}
