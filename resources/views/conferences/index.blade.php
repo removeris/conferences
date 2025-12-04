@@ -11,7 +11,7 @@
     <h1>Conferences</h1>
 
     @auth
-        <p>
+        <p class="create-button">
             <a href="{{ route('conferences.create') }}">Create new conference</a>
         </p>
     @endauth

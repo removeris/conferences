@@ -1,5 +1,9 @@
 @extends('layout.base')
 
+<head>
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+</head>
+
 @section('title', 'Conferences | Log in')
 
 @section('content')

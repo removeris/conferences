@@ -1,8 +1,3 @@
-<head>
-    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
-</head>
-
-
 <nav>
     
     <div class="left-region">
