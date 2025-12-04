@@ -1,7 +1,10 @@
+{{-- resources/views/conferences/index.blade.php --}}
 @extends('layout.base')
 
-@section('title', 'Konferencijos | Pagrindinis')
+@section('title', 'Conferences | Home')
 
 @section('content')
-    <h2 style="text-align:center">Home page!</h2>
+
+    <h2>Home</h2>
+
 @endsection

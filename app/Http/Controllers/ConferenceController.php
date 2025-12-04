@@ -8,7 +8,9 @@ use App\Models\Conference;
 class ConferenceController extends Controller
 {
     public function index(Request $request) {
-        return view('conferences.index');
+        $conferences = Conference::all();
+
+        return view('conferences.index', ['conferences' => $conferences]);
     }
     public function create(Request $request) {
         return view('conferences.create');
@@ -24,6 +26,22 @@ class ConferenceController extends Controller
         $conference = Conference::find($id);
 
         return view('conferences.edit', ['conference' => $conference]);
+    }
+
+    public function update(Request $request, string $id)
+    {
+        $validated = $request->validate([
+            'title'       => ['required', 'string', 'max:255'],
+            'description' => ['required', 'string'],
+            'date'        => ['required', 'date'],
+            'address'     => ['nullable', 'string', 'max:255'],
+        ]);
+
+        $conference = Conference::find($id);
+        $conference->update($validated);
+
+        return redirect()->route('conferences.index')->
+               with('success', 'Conference created successfully.');
     }
 
     public function store(Request $request)

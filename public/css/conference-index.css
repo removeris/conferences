@@ -1,0 +1,129 @@
+/* PAGE TITLE */
+h1 {
+    margin: 2.5rem 0 1.5rem 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+/* CONFERENCE LIST */
+ul {
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 0;
+}
+
+/* SINGLE CONFERENCE ENTRY */
+li {
+    margin: 2rem 0;
+    padding: 1.8rem;
+    background-color: var(--secondary-color);
+    border-radius: 14px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(112, 143, 143, 0.5);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* HOVER LIFT EFFECT */
+li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.85);
+}
+
+/* CONFERENCE TITLE */
+li h2 {
+    font-family: "Kanit", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.6rem;
+    color: var(--accent-color);
+}
+
+/* META TEXT (DATE, ADDRESS) */
+li p strong {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* DESCRIPTION */
+li p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* "VIEW DETAILS" LINK */
+li a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    transition: opacity 0.15s ease;
+}
+
+li a:hover {
+    opacity: 0.75;
+}
+
+/* EDIT & DELETE FORMS */
+li form {
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+}
+
+/* BUTTONS (EDIT / DELETE) */
+li button {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    padding: 0.4rem 1.1rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
+
+/* EDIT BUTTON HOVER */
+li form:first-of-type button:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    box-shadow: 0 6px 18px rgba(87, 255, 252, 0.45);
+}
+
+/* DELETE BUTTON HOVER */
+li form:last-of-type button:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #000;
+    box-shadow: 0 6px 18px rgba(255, 77, 77, 0.45);
+}
+
+/* CREATE LINK (TOP OF PAGE) */
+p a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1.4rem;
+    border-radius: 999px;
+    background-color: var(--accent-color);
+    color: #000;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+p a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(87, 255, 252, 0.45);
+}
