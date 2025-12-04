@@ -28,8 +28,7 @@ class ConferenceController extends Controller
         return view('conferences.edit', ['conference' => $conference]);
     }
 
-    public function update(Request $request, string $id)
-    {
+    public function update(Request $request, string $id){
         $validated = $request->validate([
             'title'       => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
@@ -44,8 +43,7 @@ class ConferenceController extends Controller
                with('success', 'Conference created successfully.');
     }
 
-    public function store(Request $request)
-    {
+    public function store(Request $request){
         $validated = $request->validate([
             'title'       => ['required', 'string', 'max:255'],
             'description' => ['required', 'string'],
@@ -57,5 +55,14 @@ class ConferenceController extends Controller
 
         return redirect()->route('conferences.index')->
                with('success', 'Conference created successfully.');
+    }
+
+    public function delete(string $id){
+    $conference = Conference::findOrFail($id);
+    $conference->delete();
+
+    return redirect()
+        ->route('conferences.index')
+        ->with('success', 'Conference deleted successfully.');
     }
 }
