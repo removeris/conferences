@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    margin: 3rem 0 1.2rem 0;
+    font-family: "Kanit", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--accent-color);
+}
+
+p {
+    max-width: 760px;
+    margin: 0.6rem auto;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+p strong {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+p a {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.4rem;
+    border-radius: 999px;
+    background-color: var(--accent-color);
+    color: #000;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+p a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(87, 255, 252, 0.45);
+}
+
+form {
+    display: inline-block;
+    margin: 1.8rem 0.8rem 0 0.8rem;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    padding: 0.45rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
+}
+
+form:first-of-type button:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    box-shadow: 0 6px 18px rgba(87, 255, 252, 0.45);
+}
+
+form:last-of-type button:hover {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #000;
+    box-shadow: 0 6px 18px rgba(255, 77, 77, 0.45);
+}

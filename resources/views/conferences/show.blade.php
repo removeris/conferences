@@ -1,5 +1,9 @@
 @extends('layout.base')
 
+<head>
+    <link rel="stylesheet" href="{{ asset('css/conference-show.css') }}">
+</head>
+
 @section('title', 'Conference | ' . $conference->title)
 
 @section('content')
